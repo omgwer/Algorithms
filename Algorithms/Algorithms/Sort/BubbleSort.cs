@@ -1,8 +1,8 @@
 ﻿namespace Algorithms.Algorithms.Sort;
 
-public static class BubbleSort
+public class BubbleSort : ISortable
 {
-    public static int[] Sort(this int[] values)
+    public int[] Sort(int[] values)
     {
         return values;
     }

@@ -1,9 +1,20 @@
 ﻿namespace Algorithms.Algorithms.Sort;
 
-public static class StupidSort
+public class StupidSort : ISortable
 {
-    public static int[] Sort(this int[] value)
+    public int[] Sort(int[] array)
     {
-        return value;
+        int buffer;
+        for (int i = 0; i < array.Length - 1; i++)
+        {
+            if (array[i] > array[i + 1])
+            {
+                buffer = array[i];
+                array[i] = array[i + 1];
+                array[i + 1] = buffer;
+                i = -1;
+            }
+        }
+        return array;
     }
 }
