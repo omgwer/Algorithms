@@ -1,6 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
 using Algorithms.Algorithms.Sort;
+using BenchmarkDotNet.Running;
 
 Console.WriteLine("Hello, World!");
 
