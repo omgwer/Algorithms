@@ -3,8 +3,10 @@
 using Algorithms.Algorithms.Sort;
 using BenchmarkDotNet.Running;
 
-Console.WriteLine("Hello, World!");
+int[] test = { -1, 5,5,5,5,-2,0 };
 
-int[] test = { 3, 2, 1 };
+var t =new ShakerSort().Sort(test);
 
-new StupidSort().Sort(test);
+
+
+
